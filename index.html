@@ -46,6 +46,113 @@
                     <img src="imagetest.jpg" alt="Joensuu" height="100">
                 </section>
 
+                <section>
+                <section>
+					<h2>Blogimerkintä 2 (27.8.2015)</h2> <br />
+					<p> Aladioissa esitelty viisi tärkeää  verkkoprotokollaa. </p>
+				</section>
+                 <section>
+					<h2>1. IP</h2> <br/>
+					<ul>
+					<li>TCP/IP-mallin Internet-kerroksen protokolla </li><br/>
+					<li>Internetin ydin </li><br/>
+					<li>Huolehtii IP-tietoliikennepakettien toimittamisesta perille pakettikytkentäisessä Internet-verkossa </li><br/>
+					<li>Ainoa asia, mikä kaikkia Internetiin liitettyjä koneita yhdistää </li><br/>
+				</ul>
+                </section>
+                 <section>
+					<ul>
+					<li>IP-osoite on tavallisesti numerosarja</li><br>
+					<li>IP-paketissa kuljetettavat protokollat on numeroitu </li><br/>
+					<li>IP-paketit toimitetaan perille IP-osoitteiden perusteella</li><br/>
+					<li>Protokollan numerosta vastaanottaja tietää, mitä IP-paketin sisällä on</li><br/>
+					<li>IP-pakettien perille toimittamista sanotaan reitittämiseksi  </li>
+				</ul>
+                </section>
+
+
+                 <section>
+					<h2>2. TCP</h2> <br/>
+					<ul>
+					<li>Protokollalla luodaan yhteyksiä tietokoneiden välille, joilla on pääsy Internetiin</li><br/>
+					<li>TCP-yhteyksien avulla tietokoneet voivat lähettää toisilleen tavujonoja</li><br/>
+					<li>Tarvittaessa hävinnyt paketti voidaan lähettää uudestaan</li><br/>
+					<li>Protokolla pitää myös huolta, että paketit saapuvat perille oikeassa järjestyksessä </li><br>
+					<li>Suurin osa Internetin liikenteestä perustuu TCP-protokollaan</li>
+
+				</ul>
+                </section>
+                  <section>
+					<ul>
+					<li>Esimerkiksi WWW-sivujen hakeminen tehdään siten, että selaimen ja palvelimen välille muodostetaan TCP-yhteys, jossa selain voi lähettää tavujonoja palvelimelle ja palvelin tavujonoja selaimelle</li><br/>
+					<li>TCP-yhteys sisältää kolme vaihetta: yhteyden muodostaminen, tiedonsiirto sekä yhteyden katkaisu</li><br/>
+					<li>TCP-protokollaan on kehitetty ruuhkanhallintamekanismeja</li><br/>
+					<li>TCP-protokollan päälle rakennettuja protokollia ovat mm. HTTP, SMTP, Telnet, SSH sekä FTP.</li><br>
+					<li>TCP ja Node.JS: https://nodejs.org/api/net.html</li>
+				</ul>
+                </section>
+
+                                 <section>
+					<h2>3. HTTP</h2> <br/>
+					<ul>
+					<li>Protokolla jota selaimet ja WWW-palvelimet käyttävät tiedonsiirtoon</li><br/>
+					<li>Asiakasohjelma (esim. selain) avaa TCP-yhteyden palvelimelle ja lähettää pyynnön (GET)</li><br/>
+					<li>Palvelin vastaa sopivalla vastauksella (esim. html-sivulla)</li><br/>
+				</ul>
+
+                </section>
+                  <section>
+					<ul>
+					<li>Ensimmäinen dokumentoitu HTTP:n versio julkaistiin vuonna 1991</li><br/>
+					<li>Metodeja ovat esim. GET (resurssin haku), POST (tietojen lähettäminen), OPTIONS (kysely ominaisuuksista) ja HEAD (pyydä vain otsikkotiedot)</li><br/>
+					<li>HTTP normaalisti tilaton (pyyntöjen tulos ei riipu edellisistä tuloksista tms.)</li><br/>
+					<li>HTTP Ja Node.JS: https://nodejs.org/api/http.html</li><br/>
+
+				</ul>
+
+                </section>
+
+                <section>
+					<h2>4. FTP</h2> <br/>
+										<ul>
+					<li>TCP –protokollaa käyttävä tiedonsiirtoprotokolla kahden tietokoneen välille</li><br/>
+					<li>Toimii asiakas-palvelin –periaatteella</li><br/>
+					<li>Tehokas, helppo ja luotettava </li><br/>
+				</ul>
+
+                </section>
+                 <section>
+
+										<ul>
+					<li>FTP-palvelin voi toimia aktiivisessa tai passiivisessa tilassa (aktiivinen avaa itse yhteyden asiakkaaseen ja aloittaa tiedonsiirron, passiivinen odottaa asiakkaan yhteyden avaamista).</li><br/>
+					<li>Tiedot lähetetään salaamattomina (kehittyneet FTP-palvelin ja asiakasohjelmistot osaavat hyödyntää salausta)</li><br/>
+					<li>Yhteyden avaaminen palomuurien ja IP-osoitemuunnoksien läpi ongelmallista</li><br/>
+					<li>Node.js:n eräs FTP-kirjasto: https://www.npmjs.com/package/ftp</li><br/>
+
+				</ul>
+
+                </section>
+
+                                 <section>
+					<h2>5. SMTP</h2> <br/>
+															<ul>
+					<li>TCP-pohjainen protokolla sähköpostien lähettämiseen serveriltä serverille	</li><br/>
+					<li>Käytetään myös viestin lähettämiseen clientiltä serverille</li><br/>
+					<li>Nykyaikaiset palvelimet käyttävät laajennettua ESMTP -protokollaa</li><br/>
+				</ul>
+                </section>
+                <section>
+				<ul>
+					<li>Suurin osa sähköpostijärjestelmistä, jotka toimivat Internetissä, käyttää SMTP:tä viestien lähettämiseen</li><br/>
+					<li>Lähetetyn viestin voi lukea sähköpostiohjelmalla (tällöin yleensä hakemiseen käytössä POP3 tai IMAP).</li><br/>
+					<li>Node.js SMTP-client esimerkki: https://github.com/andris9/simplesmtp</li><br/>
+				</ul>
+                </section>
+
+
+            </section>
+                </section>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
