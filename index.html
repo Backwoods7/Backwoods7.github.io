@@ -52,8 +52,8 @@
                 <section>
                 <section>
 					<h2>Blogimerkintä 2 (27.8.2015)</h2> <br />
-					<h3> Verkkoprotokollat </h3>
-					<p> Tämän merkinnän aladioissa on esitelty viisi mielestäni tärkeää  verkkoprotokollaa. </p>
+					<h3>Verkkoprotokollat </h3>
+					<p> Tämän merkinnän aladioissa on esitelty viisi mielestäni tärkeää verkkoprotokollaa. </p>
 				</section>
                  <section>
 					<h2>1. IP</h2> <br/>
@@ -154,6 +154,24 @@
 
 
             </section>
+                     <section>
+					<h2>Blogimerkintä 3 (2.9.2015)</h2> <br />
+					<h3>Irclokin asennusohje </h3>
+<ul>
+	<li>Luo irclokki-sovellus OpenShiftiin: rhc app create irclokki nodejs-0.10 --from-code  https://github.com/jvanhalen/irclokki.git
+ </li> <br>
+	<li>Lisää mysql-cartridge OpenShift-sovellukseen: rhc cartridge add mysql-5.5 -a irclokki
+ </li> <br>
+		<li>Editoi tietokanta kuntoon rhc ssh irclokki: 
+rhc ssh irclokki 
+mysql 
+DROP DATABASE if exists irclog; 
+CREATE DATABASE irclog; 
+USE irclog; 
+CREATE TABLE log (id INT PRIMARY KEY AUTO_INCREMENT, timestamp BIGINT, message TEXT); 
+ </li>
+</ul>
+				</section>
                 </section>
 
 		</div>
