@@ -160,23 +160,23 @@
 					<h3>Irclokin asennusohje (aladioissa) </h3>
 				</section>
 <section>
-	<p>1) Luo (kopioi) irclokki-sovellus OpenShiftiin:<br>rhc app create irclokki nodejs-0.10 --from-code  https://github.com/jvanhalen/irclokki.git </p>
+	<p>1) Luo (kopioi) irclokki-sovellus OpenShiftiin:<br><br>rhc app create irclokki nodejs-0.10 --from-code  https://github.com/jvanhalen/irclokki.git </p>
  </section> 
  <section>
-	<p>2) Lisää mysql-cartridge OpenShift-sovellukseen:<br>rhc cartridge add mysql-5.5 -a irclokki
+	<p>2) Lisää mysql-cartridge OpenShift-sovellukseen:<br><br>rhc cartridge add mysql-5.5 -a irclokki
  </p>  </section>
 		 <section> <p>3) Editoi tietokanta kuntoon:
-<br>
+<br><br>
 rhc ssh irclokki <br>
 mysql <br>
 DROP DATABASE if exists irclog; <br>
 CREATE DATABASE irclog; <br>
 USE irclog; <br>
-CREATE TABLE log (id INT PRIMARY KEY AUTO_INCREMENT, timestamp BIGINT, message TEXT); <br>
+CREATE TABLE log (id INT PRIMARY KEY AUTO_INCREMENT, timestamp BIGINT, message TEXT); <br> <br>
 rhc app-restart irclokki </p>
  </section> 
  		 <section> <p>
- 		 	Tämä tehtävä onnistui kerrasta luennolla annetuilla ohjeilla ja uskon ymmärtäväni asian hyvin. </p>
+ 		 	Tämä tehtävä onnistui kerrasta luennolla annetuilla ohjeilla ja uskon ymmärtäväni asian (riittävän) hyvin. </p>
  </section> 
 				</section>
                 </section>
